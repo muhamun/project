@@ -1,0 +1,42 @@
+.bola{
+  text-align: center;
+}
+
+.go{
+  display: grid;
+  place-content: center;
+}
+
+.og{
+
+  /* margin: 0px; */
+    /* position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    width: 50%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.hp{
+  
+  justify-content: center;
+  color: black;
+
+}
+.op{
+  background-color: cadetblue;
+  /* background-image:linear-gradient(#FB8415, #DF2AF6); */
+  /* height: 10%; */
+}
+@media screen and(max-width:768px) {
+    body{
+      overflow: hidden;
+      background-color: red;
+    }
+}
+/*.containershadowrounded{
+  color: white;
+}
+

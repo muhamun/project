@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <input type="text" id="1" placeholder="insert a numbrer">
+    <span id="sign"></span>
+    <input type="text" id="2" placeholder="insert a number">
+    <p>=
+      <span id="ans"></span>
+    </p>
+    <button onclick="fun()" value="+">+</button>
+    <button onclick="fan()" value="*">*</button>
+    <button onclick="bob()" value="/">/</button>
+    <button onclick="bub()" value="-">-</button>
+  </form>
+
+
+
+  <script>
+    function fun() {
+      let a =document.getElementById("1").value;
+      let b =document.getElementById("2").value;
+      let sum= Number(a)+Number(b);
+      document.getElementById("ans").innerHTML=sum;
+    }
+    function fan() {
+      let a =document.getElementById("1").value;
+      let b =document.getElementById("2").value;
+      let sum= Number(a)*Number(b);
+      document.getElementById("ans").innerHTML=num1*num2
+    }
+    function bob() {
+      let a =document.getElementById("1").value;
+      let b =document.getElementById("2").value;
+      let sum= Number(a)/Number(b);
+      document.getElementById("ans").innerHTML=num1/num2;
+    }
+    function bub() {
+      let a =document.getElementById("1").value;
+      let b =document.getElementById("2").value;
+      let sum= Number(a)-Number(b);
+      document.getElementById("ans").innerHTML=num1-num2;
+    }
+  </script>
+</body>
+</html>

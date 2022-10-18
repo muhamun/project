@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <input type="text" id="loan" placeholder="loan amount"><br>
+    <input type="text" id="mark" placeholder="mark up"><br>
+    <select id="repay">
+      <option value="1">1 year</option>
+      <option value="2">2 years</option>
+      <option value="3">3 years</option>
+      <option value="4">4 years</option>
+      <option value="5">5 years</option>
+      <option value="6">6 years</option>
+      <option value="7">7 years</option>
+      <option value="8">8 years</option>
+    </select>
+  </form><br>
+  <button type="button" onclick="add()">calculate</button><br>
+  <script>
+   let a=Number(document.getElementById("loan").value);
+   let b=Number(document.getElementById("mark").value)/100;
+   let c=document.getElementById("repay").value;
+   let d=b*a;
+   let totalpayable=(d+a)*c;
+   function add(){
+     alert ("the total money paid will be" + " " + totalpayable);
+   }
+  </script>
+</body>
+</html>

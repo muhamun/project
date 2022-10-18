@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 class="title" >APPLICATION FORM</h1>
+  <input class="input1">
+  <span class="sign" ></span>
+  <input class="input2">
+  <span class="answer" ></span><br>
+
+  <button  value="add"> + </button>
+  <button  value="minus"> - </button>
+  <button  value="mult"> * </button>
+  <button  value="divide"> / </button>
+
+  
+<script>
+  document.querySelector('.title').textContent='SIMPLE CALCULATOR';
+
+  let a = Number(document.querySelector('.input1').value);
+  let b = Number(document.querySelector('.input2').value);
+  let span1= document.querySelector('.sign');
+  let span2= document.querySelector('.answer');
+
+  const x = document.querySelectorAll('button');
+  
+  for (let i = 0; i < x.length; i++) {
+ 
+  x[i].addEventListener('click', function(){
+    if(x[i].value=="add"){
+    let c = a+b;
+    span1.textContent ="+";
+    span2.textContent= '=' +' ' + c;
+    
+    } else if(x[i].value=="minus"){
+      let c = a-b;
+      span1.textContent ="-";
+      span2.textContent= '=' +' ' + c;
+
+    } else if(x[i].value=="mult"){
+      let c = a*b;
+      span1.textContent ="x";
+      span2.textContent= '=' +' ' + c;
+
+    } else if(x[i].value=="divide"){
+      let c = a/b;
+      span1.textContent ="/";
+      span2.textContent= '=' +' ' + c;
+    }
+ 
+  })
+};
+</script>
+</body>
+</html>
